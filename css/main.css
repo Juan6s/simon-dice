@@ -1,0 +1,55 @@
+html{
+    font-family: Consolas;
+}
+
+h1{
+    position: absolute;
+    left: 380px; 
+    font-size: 50px;
+
+}
+
+button{
+    
+    height: 200px;
+    width: 200px;
+}
+
+.panel-botones{
+    position: absolute;
+    left: 30%;
+    top: 25%;
+
+    border-top-left-radius: 10em;
+    border-top-right-radius: 10em;
+    border-bottom-left-radius: 10em;
+    border-bottom-right-radius: 10em;
+    
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+
+#boton-amarillo{
+    border-top-left-radius: 10em;
+    border-bottom-right-radius: 5em;
+    background-color: #FFE162;
+    border-color: #FFE162;
+}
+#boton-azul{  
+    border-top-right-radius: 10em;
+    border-bottom-left-radius: 5em;
+    background-color:#6FB2D2;
+    border-color: #6FB2D2;
+}
+#boton-rojo{
+    border-bottom-left-radius: 10em;
+    border-top-right-radius: 5em;
+    background-color: #FF6464;
+    border-color: #FF6464;
+}
+#boton-verde{
+    border-bottom-right-radius: 10em;
+    border-top-left-radius: 5em;
+    background-color: #91C483;
+    border-color: #91C483;
+}
