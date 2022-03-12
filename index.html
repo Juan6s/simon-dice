@@ -9,21 +9,28 @@
     
 </head>
 <body>
-    <h1>Juego Simon Dice!</h1>
+    <audio id="sonido-amarillo" src="sound/boton-amarillo-sonido.mp3"></audio>
+    <audio id="sonido-verde" src="sound/boton-verde-sonido.mp3"></audio>
+    <audio id="sonido-rojo" src="sound/boton-rojo-sonido.mp3"></audio>
+    <audio id="sonido-azul" src="sound/boton-azul-sonido.mp3"></audio>
 
+    <h1>Juego Simon Dice!</h1>
+    <button id="boton-comenzar">Comenzar!</button>
     <div class="panel-botones">
         <div>
-            <button id="boton-amarillo"></button>
-            <button id="boton-azul"></button>
+            <button class="boton-juego" id="boton-amarillo"></button>
+            <button class="boton-juego" id="boton-azul"></button>
         </div>
+            <label class="boton-juego" id="contador">0</label>
         <div>
-            <button id="boton-rojo"></button>
-            <button id="boton-verde"></button>
+            <button class="boton-juego" id="boton-rojo"></button>
+            <button class="boton-juego" id="boton-verde"></button>
         </div>
         
     </div>
 
 
-    <script src='main.js'></script>
+    <script src='js/main.js'></script>
+    <script src='js/pruebas.js'></script>
 </body>
 </html>

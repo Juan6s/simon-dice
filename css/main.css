@@ -9,7 +9,7 @@ h1{
 
 }
 
-button{
+.boton-juego{
     
     height: 200px;
     width: 200px;
@@ -19,7 +19,6 @@ button{
     position: absolute;
     left: 30%;
     top: 25%;
-
     border-top-left-radius: 10em;
     border-top-right-radius: 10em;
     border-bottom-left-radius: 10em;
@@ -27,7 +26,6 @@ button{
     
     background-color: rgba(0, 0, 0, 0.808);
 }
-
 
 #boton-amarillo{
     border-top-left-radius: 10em;
@@ -52,4 +50,22 @@ button{
     border-top-left-radius: 5em;
     background-color: #91C483;
     border-color: #91C483;
+}
+
+
+#contador{
+    color: aliceblue;
+    position: absolute;
+    left: 190px;
+    top: 170px;
+    font-size: 50px;
+}
+#boton-comenzar{
+    position: absolute;
+    top: 110px;
+    left: 570px;
+}
+
+[presionado=true]{
+    border-right-style: dashed;
 }
