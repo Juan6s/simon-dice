@@ -1,18 +1,21 @@
-$botonRojo = document.querySelector("#boton-rojo");
-$audio = document.querySelector("#sonido-rojo");
-
-const paneles= {
-    "boton-rojo":"sonido-rojo",
-    "boton-amarillo":"sonido-amarillo",
-    "boton-verde":"sonido-verde",
-    "boton-rojo":"sonido-rojo"
-
-}
 
 
-$botonRojo.onclick = function(event){
+
+
+document.querySelector("#boton-rojo").onclick = function(event){
     event.preventDefault();
-    $audio.play();
-    $botonRojo.presionado = "true"
-    alert($botonRojo.presionado)
+    accionarBotonRojo();
+}
+document.querySelector("#boton-amarillo").onclick = function(event){
+    event.preventDefault();
+    accionarBotonAmarillo();
+}
+document.querySelector("#boton-azul").onclick = function(event){
+    event.preventDefault();
+    accionarBotonAzul();
+}
+document.querySelector("#boton-verde").onclick = function(event){
+    event.preventDefault();
+    alert("Sadasd")
+    accionarBotonVerde();
 }
