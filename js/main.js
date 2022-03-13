@@ -2,7 +2,7 @@
 let secuenciaUsuario = [];
 let secuenciaMaquina = [];
 let turnoUsuario = false;
-
+let tiempoEspera = 700;
 
 function agregarSecuencia() {
     secuenciaMaquina.push(random(1, 4));
@@ -48,7 +48,8 @@ function turnoMaquina() {
         }
         reproducirSecuencia(i);
         i++;
-    }, 700);
+    }, tiempoEspera);
+    tiempoEspera -= 10;
 }
 
 function iniciarJuego() {
@@ -84,6 +85,7 @@ document.querySelector(".panel-botones").onclick = function (event) {
 
     if (resultadoComparacion === false) {
         document.querySelector("#contador").innerText = "-";
+        document.querySelector("#sonido-pierde").play();
     } else if (resultadoComparacion === true) {
         setTimeout(turnoMaquina, 700);
     }
