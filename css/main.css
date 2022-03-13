@@ -18,7 +18,7 @@ h1{
 .panel-botones{
     position: absolute;
     left: 30%;
-    top: 25%;
+    top: 150px;
     border-top-left-radius: 10em;
     border-top-right-radius: 10em;
     border-bottom-left-radius: 10em;
@@ -66,3 +66,6 @@ h1{
     left: 570px;
 }
 
+[name="activado"]{
+    filter: brightness(80%) !important;
+}
