@@ -3,31 +3,17 @@ const $botonAmarillo = document.querySelector("#boton-amarillo");
 const $botonVerde = document.querySelector("#boton-verde");
 const $botonAzul = document.querySelector("#boton-azul");
 
-function accionarBotonRojo(){
-    document.querySelector("#sonido-rojo").play();
-    $botonRojo.name = "activado";
-    setTimeout(apagarBoton,40, $botonRojo);
+function accionarBoton(color) {
+        const boton = document.querySelector(`#boton-${color}`)
+        document.querySelector(`#sonido-${color}`).play()
+        boton.style.filter = "brightness(80%)"
+        setTimeout(apagarBoton, 40, boton);
 
-}
-function accionarBotonAzul(){
-    document.querySelector("#sonido-azul").play();
-    $botonAzul.name = "activado";
-    setTimeout(apagarBoton,40, $botonAzul);
-}
-function accionarBotonVerde(){
-    document.querySelector("#sonido-verde").play();
-    $botonVerde.name = "activado";
-    setTimeout(apagarBoton,40, $botonVerde);
-}
-function accionarBotonAmarillo(){
-    document.querySelector("#sonido-amarillo").play();
-    $botonAmarillo.name = "activado";
-    setTimeout(apagarBoton,40, $botonAmarillo);
-}
+    }
 
 
-function apagarBoton($boton){
-    
+    function apagarBoton($boton) {
 
-    $boton.name=""; 
-}
+
+        $boton.style.filter = "brightness(100%)"
+    }

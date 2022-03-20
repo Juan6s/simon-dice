@@ -66,6 +66,3 @@ h1{
     left: 570px;
 }
 
-[name="activado"]{
-    filter: brightness(80%) !important;
-}

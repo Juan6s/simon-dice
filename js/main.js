@@ -13,19 +13,19 @@ function reproducirSecuencia(indice) {
     switch (secuenciaMaquina[indice]) {
 
         case 1:
-            accionarBotonAmarillo();
+            accionarBoton("amarillo");
 
             break;
         case 2:
-            accionarBotonAzul();
+            accionarBoton("azul");
 
             break;
         case 3:
-            accionarBotonRojo();
+            accionarBoton("rojo");
 
             break;
         case 4:
-            accionarBotonVerde();
+            accionarBoton("verde");
             break;
         default:
             return;
@@ -78,8 +78,7 @@ function compararSecuencias() {
 
 
 
-document.querySelector(".panel-botones").onclick = function (event) {
-    event.preventDefault();
+document.querySelector(".panel-botones").onclick = function () {
 
     resultadoComparacion = compararSecuencias();
 
@@ -91,45 +90,44 @@ document.querySelector(".panel-botones").onclick = function (event) {
     }
 }
 
-document.querySelector("#boton-comenzar").onclick = function (event) {
-    event.preventDefault();
+document.querySelector("#boton-comenzar").onclick = function () {
+
     iniciarJuego();
 
 
 }
 
 
-document.querySelector("#boton-amarillo").onclick = function (event) {
-    event.preventDefault();
+document.querySelector("#boton-amarillo").onclick = function () {
+
     if (turnoUsuario) {
-        accionarBotonAmarillo();
+        accionarBoton("amarillo");
         secuenciaUsuario.push(1)
     }
-    accionarBotonAmarillo();
+
 }
-document.querySelector("#boton-azul").onclick = function (event) {
-    event.preventDefault();
+document.querySelector("#boton-azul").onclick = function () {
+
     if (turnoUsuario) {
-        accionarBotonAzul()
+        accionarBoton("azul");
         secuenciaUsuario.push(2);
     }
 
 
 }
 
-document.querySelector("#boton-rojo").onclick = function (event) {
-    event.preventDefault();
+document.querySelector("#boton-rojo").onclick = function () {
     if (turnoUsuario) {
-        accionarBotonRojo();
+        accionarBoton("rojo");
         secuenciaUsuario.push(3)
     }
 
 }
 
-document.querySelector("#boton-verde").onclick = function (event) {
-    event.preventDefault();
+document.querySelector("#boton-verde").onclick = function () {
+
     if (turnoUsuario) {
-        accionarBotonVerde();
+        accionarBoton("verde");
         secuenciaUsuario.push(4)
     }
 
